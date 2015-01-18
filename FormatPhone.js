@@ -19,7 +19,7 @@
 		if (res)
 		{
 			// handle the case of 10 digits and no extension
-			return phone.replace (patt, '$1'+"-"+'$2'+"-"+'$3');
+			return phone.replace (patt, "("+'$1'+")"+"-"+'$2'+"-"+'$3');
 		}
 
 		// Lets test if it is 10 digits with an extension as in this example 8008872213x123
@@ -29,7 +29,7 @@
  		res = patt.test(phone);
 		if (res)
 		{
-			return phone.replace (patt,'$1'+"-"+'$2'+"-"+'$3'+'$4'+'$5');
+			return phone.replace (patt,"("+'$1'+")"+"-"+'$2'+"-"+'$3'+'$4'+'$5');
 		}
 		// Not a matched phone pattern. Return an emplty string to indicate an error to the caller
 		return "";
