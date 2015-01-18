@@ -1,4 +1,6 @@
 
+	var FormatPhone= {};
+
 	// Format a string to a phone number.
 	// Input:
 	// phone: Either of the format
@@ -34,3 +36,4 @@
 		// Not a matched phone pattern. Return an emplty string to indicate an error to the caller
 		return "";
 	}
+	FormatPhone.formatPhone = formatPhone;
